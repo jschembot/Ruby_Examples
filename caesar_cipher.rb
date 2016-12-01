@@ -1,3 +1,12 @@
+=begin
+
+This program is aimed to use a basic function to recreate
+Julius Caesar's encoded messages.  The user can choose a
+sting and shift each letter over the desired amount.
+Ex. caesar_cipher("A",6) ==> "G"
+
+=end
+
 def caesar_cipher(string, shift)
     crypt_str = []
 
@@ -25,5 +34,5 @@ def caesar_cipher(string, shift)
     return crypt_str
 end
 
-crypt = caesar_cipher("Is this promising",4)
+crypt = caesar_cipher("A hat cat",6)
 puts crypt
